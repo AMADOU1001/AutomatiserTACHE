@@ -1,0 +1,42 @@
+<div mat-dialog-title> 
+    <h1> Formulaire d'Ajout d'etudiant</h1>
+</div>
+<form [formGroup]="empForm" (ngSubmit)="onFormSubmit()">
+
+
+<div mat-dialog-content class="content">
+<div class="row">
+    <mat-form-field appearance="outline">
+        <mat-label>Prénom</mat-label>
+        <input matInput type="text" placeholder="EX. Amadou" formControlName="prenom">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Nom</mat-label>
+        <input matInput type="text" placeholder="EX. BA" formControlName="nom">
+      </mat-form-field>
+    </div>
+
+    <div class="row">
+        <mat-form-field appearance="outline">
+            <mat-label>Classe</mat-label>
+            <input matInput type="text" placeholder="EX. L3 GENIE LOGICIEL" formControlName="classe">
+          </mat-form-field>
+         
+        </div>
+
+        <div class="row">
+            <mat-radio-group aria-label="Sexe" formControlName="sexe">
+                <mat-label><b>SEXE</b></mat-label>
+                <mat-radio-button value="HOMME">HOMME</mat-radio-button>
+                <mat-radio-button value="FEMME">FEMME</mat-radio-button>
+              </mat-radio-group>
+              
+            </div>
+</div>
+
+
+<div mat-dialog-actions class="action">
+    <button mat-raised-button type="button" [mat-dialog-close]="false"> RETOUR</button>
+    <button mat-raised-button type="submit"  color="primary">{{data ? 'Modifier': 'Sauvegarder'}}</button>
+</div>
+</form>
