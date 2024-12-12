@@ -2,7 +2,7 @@
 REM Configurations
 set REPO_URL=https://github.com/AMADOU1001/AutomatiserTACHE.git
 set IMAGE_NAME= automatiser-angular-nginx-app
-set PORT=3081
+set PORT=3082
 
 echo  -------------Début du déploiement...-----------------
 

@@ -1,11 +1,18 @@
 {
   "etudiants": [
     {
-      "prenom": "Abdoulaye",
-      "nom": "diallo",
-      "classe": "1er",
-      "sexe": "HOMME",
-      "id": "1846"
+      "id": "f2dc",
+      "prenom": "AMADOU",
+      "nom": "BA",
+      "classe": "L3 GL",
+      "sexe": "HOMME"
+    },
+    {
+      "id": "2360",
+      "prenom": "AISSATA",
+      "nom": "FALL",
+      "classe": "L3 GL",
+      "sexe": "FEMME"
     }
   ]
 }
