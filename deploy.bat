@@ -19,7 +19,7 @@ echo ✅ Push sur GitHub terminé.
 
 REM Étape 2 : Construire le projet Angular
 echo 🔧 Construction du projet Angular...
-call ng build --prod
+call ng build 
 if errorlevel 1 (
     echo ❌ Erreur : Construction du projet Angular échouée.
     exit /b 1
